@@ -95,8 +95,8 @@
                     <input type="text" id="genSignature" placeholder="Signature">
                 </div>
                 <div style="text-align:center; margin-top:15px;">
-                    <button class="btn btn-add" onclick="generateRow()">➕ Tambah Baris</button>
-                    <button class="btn btn-add" onclick="generateMultiple(5)">Tambah 5 Baris</button>
+                    <button class="btn btn-add" onclick="generateRow()">INPUT</button>
+                    <!--button class="btn btn-add" onclick="generateMultiple(5)">Tambah 5 Baris</button-->
                 </div>
             </div>
 
@@ -135,9 +135,9 @@
             </div>
 
             <div class="actions">
-                <button class="btn btn-excel" onclick="exportToExcel()">📊 Export Excel</button>
-                <button class="btn btn-pdf" onclick="exportToPDF()">📄 Export PDF (Portrait)</button>
-                <button class="btn btn-clear" onclick="clearTable()">🗑️ Reset Semua</button>
+                <!--button class="btn btn-excel" onclick="exportToExcel()">📊 Export Excel</button-->
+                <button class="btn btn-pdf" onclick="exportToPDF()">PDF</button>
+                <button class="btn btn-clear" onclick="clearTable()">🗑️Hapus Semua</button>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
             table.classList.toggle('show', tableVisible);
             
             const btn = document.getElementById('toggleBtn');
-            btn.textContent = tableVisible ? "🙈 Sembunyikan Tabel" : "👁️ Tampilkan Tabel";
+            btn.textContent = tableVisible ? "HIDE" : "SHOW TABLE";
         }
 
         function addRow(data = {}) {
